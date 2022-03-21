@@ -4,7 +4,6 @@ from operator import itemgetter
 import random
 from dqn.main import get_train_results, get_auto_train_results
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
 
