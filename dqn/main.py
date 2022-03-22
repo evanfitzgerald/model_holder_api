@@ -1,6 +1,3 @@
-"""
-Script containing the training and testing loop for DQNAgent
-"""
 
 import json
 import os
