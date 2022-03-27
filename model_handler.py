@@ -166,7 +166,7 @@ def generate_deferrable_historical_data(kilowatts, preferred):
         Each day will store the total kilwatts used by that appliance,
         which hours of the day it was used, and the total cost based on the cost rates previously defined.
         """
-        ret[day] = {"kw": 0, "hours": [], "cost": 0}
+        ret.append({"day": day, "kw": 0, "hours": [], "cost": 0})
 
         # To account to user variance, how much an appliance gets used on a daily period and when is determined using guided-random data.
         random.shuffle(preferred)
@@ -243,7 +243,7 @@ def generate_continuous_historical_data(kilowatts):
         which hours of the day it was used, and the total cost based on the cost rates previously defined.
         """
 
-        ret[day] = {"kw": 0, "hours": [], "cost": 0}
+        ret.append({"day": day, "kw": 0, "hours": [], "cost": 0})
 
         # To account to user variance, how much an appliance gets used on a daily period and when is determined using guided-random data.
         hours_list = [i for i in range(24)]

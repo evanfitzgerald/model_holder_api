@@ -311,7 +311,7 @@ def testContinuousAppliance(env, dqn_agent, kilowatts, render=False):
         Each day will store the total kilwatts used by that appliance,
         which hours of the day it was used, and the total cost based on the cost rates previously defined.
         """
-        ret[ep] = {"kw": 0, "hours": [], "cost": 0}
+        ret.append({"day": ep, "kw": 0, "hours": [], "cost": 0})
 
         temperature = []
         score = 0
@@ -391,7 +391,7 @@ def testDeferrableAppliance(
     ret = []
 
     for ep in range(0, 730):
-        ret[ep] = {"kw": 0, "hours": [], "cost": 0}
+        ret.append({"day": ep, "kw": 0, "hours": [], "cost": 0})
 
         hours_used = random.randint(1, 21)
         if hours_used >= 16:
