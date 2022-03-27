@@ -304,7 +304,7 @@ def testContinuousAppliance(env, dqn_agent, kilowatts, render=False):
     }
 
     step_cnt = 0
-    ret = {}
+    ret = []
 
     for ep in range(0, 730):
         """
@@ -388,7 +388,7 @@ def testDeferrableAppliance(
     reward_history = []
     env.fit_y = fit_y
 
-    ret = {}
+    ret = []
 
     for ep in range(0, 730):
         ret[ep] = {"kw": 0, "hours": [], "cost": 0}

@@ -132,7 +132,7 @@ def generate_deferrable_historical_data(kilowatts, preferred):
     current user preferences.
     """
 
-    ret = {}
+    ret = []
 
     cost_rates = {
         0: off_peak,
@@ -208,7 +208,7 @@ def generate_continuous_historical_data(kilowatts):
     current user preferences.
     """
 
-    ret = {}
+    ret = []
 
     cost_rates = {
         0: off_peak,
