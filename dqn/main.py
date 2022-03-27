@@ -560,9 +560,6 @@ def generate_deferrable_appliance_data(
         results = testDeferrableAppliance(
             env=env,
             dqn_agent=dqn_agent,
-            num_test_eps=args.num_test_eps,
-            seed=seed,
-            results_basepath=args.results_folder,
             render=args.render,
             kilowatts=kilowatts,
             fit_y=fit_y,
