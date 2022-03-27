@@ -9,7 +9,6 @@ from operator import itemgetter
 import random
 from dqn.main import generate_deferrable_appliance_data, generate_continuous_appliance_data
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
 # peak kWh charge ranges
